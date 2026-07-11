@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install ruff pytest pytest-asyncio
         sudo apt-get update
-        sudo apt-get install -y libegl1 libgl1-mesa-dev libglx-mesa0
+        sudo apt-get install -y libegl1 libgl1-dev libglx-mesa0
 
     # 4. PASO CRUCIAL: Verificación de código limpio con Ruff
     - name: Ejecutar Linter (Ruff)
