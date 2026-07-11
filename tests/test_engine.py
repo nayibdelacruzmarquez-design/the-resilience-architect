@@ -1,5 +1,4 @@
 import pytest
-import asyncio
 from src.core.engine import AsyncEngine
 from src.core.commands import AsyncCommand
 from src.services.api_client import NetworkError
