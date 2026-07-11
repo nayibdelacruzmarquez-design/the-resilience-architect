@@ -25,12 +25,15 @@ jobs:
 # 3. Instala las dependencias del proyecto
     - name: Instalar dependencias
       run: |
+        # 3. Instala las dependencias del proyecto
+    - name: Instalar dependencias
+      run: |
         python -m pip install --upgrade pip
         pip install ruff pytest pytest-asyncio
         # Si usas PyQt6/PySide6 en entornos headless (servidores sin pantalla),
         # añadimos dependencias básicas si tus tests inicializan componentes visuales.
         sudo apt-get update
-        sudo apt-get install -y libegl1-mesa libgl1-mesa-dev libglx-mesa0
+        sudo apt-get install -y libegl1 libgl1-mesa-dev libglx-mesa0
 
     # 4. PASO CRUCIAL: Verificación de código limpio con Ruff
     - name: Ejecutar Linter (Ruff)
