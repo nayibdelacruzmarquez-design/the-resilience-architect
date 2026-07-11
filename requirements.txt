@@ -1,0 +1,17 @@
+# --- Framework Principal de UI ---
+PyQt6==6.7.1
+
+# --- Core Asíncrono e Integración ---
+qasync==0.27.1
+# Forzamos una versión estable y le diremos a pip que no use binarios puros de C si no es necesario
+aiohttp==3.10.11
+
+# --- Ingeniería de Resiliencia y Utilerías ---
+darkdetect==0.8.0
+
+# --- Entorno de Pruebas (Unit Tests) ---
+pytest==8.3.4
+pytest-asyncio==0.23.8
+
+# --- Calidad de Código y Formateo (Clean Code Streak) ---
+ruff==0.9.4
